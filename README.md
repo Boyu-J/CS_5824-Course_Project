@@ -6,7 +6,7 @@
 基于Python3和Keras2（TensorFlow后端），具体依赖安装如下(推荐使用conda虚拟环境)。
 ```shell script
 git clone https://github.com/Boyu-J/CS_5824-Course_Project.git
-cd FacialExpressionRecognition
+cd FacialExpressionRecognition # !改个名
 conda create -n FER python=3.6 -y
 conda activate FER
 conda install cudatoolkit=10.1 -y
