@@ -13,7 +13,6 @@ conda install cudatoolkit=10.1 -y
 conda install cudnn=7.6.5 -y
 pip install -r requirements.txt
 ```
-如果你是Linux用户，直接执行根目录下的`env.sh`即可一键配置环境，执行命令为`bash env.sh`。
 
 
 ## 数据准备
