@@ -84,7 +84,3 @@ python src/recognition_camera.py
 ```shell
 python src/recognition_camera.py --source 1 --video_path 视频绝对路径或者相对于该项目的根目录的相对路径
 ```
-
-下图是动态演示的在Youtube上[某个视频](https://www.youtube.com/watch?v=r5Z741PC9_c)上的识别结果。
-
-![](./assets/demo.gif)。
