@@ -41,7 +41,7 @@ The CNN model is mainly trained on JAFFE and CK+. JAFFE gives a half-length imag
 Use the command below to train the specified epochs on the dataset (jaffe or ck+）using a specific batch_size. The training will generate the corresponding visual training process. Here is an example of plotting the training process after the model has been trained on jaffe.
 
 ```shell
-python src/train.py --dataset jaffe --epochs 300 --batch_size 32 
+python src/train.py --dataset jaffe --epochs 150 --batch_size 16 
 ```
 ![](./assets/his_acc_jaffe.png)
 ![](./assets/his_loss_jaffe.png)
