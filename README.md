@@ -22,7 +22,7 @@ We use Jaffe and CK+ as the dataset.
 		- Gabor
 - Classifier
 	- SVM
-### **Deep learning method**
+### **Deep learning method**(used in this project)
 - Face detection
 	- HAAR classifier
 	- MTCNN (perform better than HAAR)
