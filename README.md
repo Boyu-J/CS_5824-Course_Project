@@ -25,7 +25,6 @@ We use Jaffe and CK+ as the dataset.
 ### **Deep learning method**(used in this project)
 - Face detection
 	- HAAR classifier
-	- MTCNN (perform better than HAAR)
 - CNN
   - For feature extraction + classification
 
