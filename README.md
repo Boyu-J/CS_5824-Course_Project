@@ -1,18 +1,5 @@
 ## Introduction
-使用卷积神经网络构建整个系统，在尝试了Gabor、LBP等传统人脸特征提取方式基础上，深度模型效果显著。在FER2013、JAFFE和CK+三个表情识别数据集上进行模型评估。
-
-
-## Environment setup
-Based on Python3 and Keras2 (TensorFlow后端), 具体依赖安装如下 (conda虚拟环境 is recommended).
-```shell script
-git clone https://github.com/Boyu-J/CS_5824-Course_Project.git
-cd FacialExpressionRecognition # !!!!改名!!!
-conda create -n FER python=3.6 -y
-conda activate FER
-conda install cudatoolkit=10.1 -y
-conda install cudnn=7.6.5 -y
-pip install -r requirements.txt
-```
+In this project, convolutional neural network is used to build the whole system, and model evaluation is carried out on two facial expression recognition datasets(JAFFE and CK+).
 
 
 ## Data preparation
@@ -63,19 +50,17 @@ python src/train.py --dataset jaffe --epochs 300 --batch_size 32
 
 
 ## Application 
-与传统方法相比，卷积神经网络表现更好，使用该模型构建识别系统，提供**GUI界面和摄像头实时检测**（摄像必须保证补光足够）。预测时对一张图片进行水平翻转、偏转15度、平移等增广得到多个概率分布，将这些概率分布加权求和得到最后的概率分布，此时概率最大的作为标签（也就是使用了推理数据增强）。
+Compared with traditional methods, convolutional neural network performs better. So we use this model to build recognition system, and provide **GUI interface** to realize interaction.When predicting, a picture is horizontally flipped, deflected by 15 degrees, and translated to obtain multiple probability distributions, and these probability distributions are weighted and summed to obtain the final probability distribution. At this time, the label with the highest probability is used as the label (i.e. using inference data augmentation).
 
 ### **Graphical User Interface**
 
-Notice: **Graphical User Interface界面预测只显示最可能是人脸的那个脸表情，但是对所有检测到的人脸都会框定预测结果并在图片上标记，标记后的图片在output目录下。**
-
-执行下面的命令即可打开GUI程序，该程序依赖PyQT设计，在一个测试图片上进行测试效果如下图。
+Execute the following command to open the GUI program, which relies on PyQT, and the test effect on a test picture is as shown in the figure below.
 
 ```shell
 python src/gui.py
 ```
 ![](./assets/gui.png)
 
-上图的GUI反馈的同时，会对图片上每个人脸进行检测并表情识别，处理后如下图。
+Meanwhile, the result will be output to the "output" folder.
 
 ![](./assets/rst.png)
