@@ -39,8 +39,8 @@ We use Jaffe and CK+ as the dataset.
 - Face detection
 	- HAAR classifier
 	- MTCNN (perform better than HAAR)
-- 卷积神经网络 CNN
-  - 用于特征提取+分类
+- CNN
+  - For feature extraction + classification
 
 
 ## Network design
