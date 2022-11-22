@@ -50,14 +50,16 @@ Using the classic convolutional neural network, the construction of the model ma
 
 
 ## Model training
-主要在FER2013、JAFFE、CK+上进行训练，JAFFE给出的是半身图因此做了人脸检测。最后在FER2013上Pub Test和Pri Test均达到67%左右准确率（该数据集爬虫采集存在标签错误、水印、动画图片等问题），JAFFE和CK+5折交叉验证均达到99%左右准确率（这两个数据集为实验室采集，较为准确标准）。
+The CNN model is mainly trained on JAFFE and CK+. JAFFE gives a half-length image, so face detection has to be done. The 5-fold cross-validation reached an accuracy rate of about 99%.
 
-执行下面的命令将在指定的数据集（fer2013或jaffe或ck+）上按照指定的batch_size训练指定的轮次。训练会生成对应的可视化训练过程，下图为在三个数据集上训练过程的共同绘图。
+Use the command below to train the specified epochs on the dataset (jaffe or ck+）using a specific batch_size. The training will generate the corresponding visual training process. Here is an example of plotting the training process after the model has been trained on jaffe.
 
 ```shell
 python src/train.py --dataset jaffe --epochs 300 --batch_size 32 
 ```
+![](./assets/acc.png)
 ![](./assets/loss.png)
+
 
 
 ## Application 
