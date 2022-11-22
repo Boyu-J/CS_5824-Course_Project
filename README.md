@@ -55,7 +55,7 @@ Using the classic convolutional neural network, the construction of the model ma
 执行下面的命令将在指定的数据集（fer2013或jaffe或ck+）上按照指定的batch_size训练指定的轮次。训练会生成对应的可视化训练过程，下图为在三个数据集上训练过程的共同绘图。
 
 ```shell
-python src/train.py --dataset fer2013 --epochs 100 --batch_size 32 
+python src/train.py --dataset jaffe --epochs 300 --batch_size 32 
 ```
 ![](./assets/loss.png)
 
