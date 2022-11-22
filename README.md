@@ -1,5 +1,5 @@
 ## Introduction
-In this project, convolutional neural network is used to build the whole system, and model evaluation is carried out on two facial expression recognition datasets(JAFFE and CK+).
+In this project, convolutional neural network is used to build the whole system, and model evaluation is carried out on two facial expression recognition datasets(Jaffe and CK+).
 
 
 ## Data preparation
