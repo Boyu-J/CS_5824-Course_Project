@@ -58,11 +58,11 @@ python src/train.py --dataset fer2013 --epochs 100 --batch_size 32
 ## Application 
 与传统方法相比，卷积神经网络表现更好，使用该模型构建识别系统，提供**GUI界面和摄像头实时检测**（摄像必须保证补光足够）。预测时对一张图片进行水平翻转、偏转15度、平移等增广得到多个概率分布，将这些概率分布加权求和得到最后的概率分布，此时概率最大的作为标签（也就是使用了推理数据增强）。
 
-### **GUI**
+### **Graphical User Interface**
 
-Notice: **GUI界面预测只显示最可能是人脸的那个脸表情，但是对所有检测到的人脸都会框定预测结果并在图片上标记，标记后的图片在output目录下。**
+Notice: **Graphical User Interface界面预测只显示最可能是人脸的那个脸表情，但是对所有检测到的人脸都会框定预测结果并在图片上标记，标记后的图片在output目录下。**
 
-执行下面的命令即可打开GUI程序，该程序依赖PyQT设计，在一个测试图片（来源于网络）上进行测试效果如下图。
+执行下面的命令即可打开GUI程序，该程序依赖PyQT设计，在一个测试图片上进行测试效果如下图。
 
 ```shell
 python src/gui.py
@@ -72,15 +72,3 @@ python src/gui.py
 上图的GUI反馈的同时，会对图片上每个人脸进行检测并表情识别，处理后如下图。
 
 ![](./assets/rst.png)
-
-### **Real-time analysis** 
-Based on opencv, 旨在用摄像头对实时视频流进行预测，同时考虑到有些人的反馈，当没有摄像头想通过视频进行测试则修改命令行参数即可。
-
-使用下面的命令会打开摄像头进行实时检测（press ESC to quit），若要指定视频进行进行检测，则使用下面的第二个命令。
-```shell
-python src/recognition_camera.py
-```
-
-```shell
-python src/recognition_camera.py --source 1 --video_path 视频绝对路径或者相对于该项目的根目录的相对路径
-```
