@@ -59,7 +59,7 @@ Compared with traditional methods, convolutional neural network performs better.
 
 ### **Graphical User Interface**
 
-Execute the following command to open the GUI program, which relies on PyQT, and the test effect on a test picture is as shown in the figure below.
+Execute the following command to open the GUI program, which relies on PyQT, and the test effect on a test picture（The picture comes from the Internet） is as shown in the figure below.
 
 ```shell
 python src/gui.py
