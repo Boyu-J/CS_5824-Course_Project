@@ -43,8 +43,10 @@ Use the command below to train the specified epochs on the dataset (jaffe or ck+
 ```shell
 python src/train.py --dataset jaffe --epochs 150 --batch_size 16 
 ```
-![](./assets/his_acc_jaffe.png)
-![](./assets/his_loss_jaffe.png)
+![](./results/his_acc_jaffe.png)
+![](./results/his_loss_jaffe.png)
+![](./results/his_acc_ck+.png)
+![](./results/his_loss_ck+.png)
 
 
 
