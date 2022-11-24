@@ -64,8 +64,8 @@ Execute the following command to open the GUI program, which relies on PyQT, and
 ```shell
 python src/gui.py
 ```
-![](./assets/gui.png)
+![](./results/gui.png)
 
 Meanwhile, the result will be output to the "output" folder.
 
-![](./assets/rst.png)
+![](./results/rst.png)
