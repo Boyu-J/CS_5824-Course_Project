@@ -45,6 +45,10 @@ python src/train.py --dataset jaffe --epochs 150 --batch_size 16
 ```
 ![](./results/his_acc_jaffe.png)
 ![](./results/his_loss_jaffe.png)
+
+```shell
+python src/train.py --dataset ck+ --epochs 150 --batch_size 32 
+```
 ![](./results/his_acc_ck+.png)
 ![](./results/his_loss_ck+.png)
 
