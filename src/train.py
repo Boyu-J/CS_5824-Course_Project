@@ -43,8 +43,8 @@ if opt.dataset == "jaffe":
 
     model = CNN()
     #use Adam as the optimizer for sparse dataset
-    sgd = Adam(learning_rate=0.0001)
-    model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
+    optimizer = Adam(learning_rate=0.0001)
+    model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
     callback = [
         ModelCheckpoint('./models/cnn_best_weights.h5', monitor='val_accuracy', verbose=True, save_best_only=True,
                         save_weights_only=True)]
