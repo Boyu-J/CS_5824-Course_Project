@@ -35,7 +35,7 @@ Using the classic convolutional neural network, the construction of the model ma
 
 
 ## Model training
-The CNN model is mainly trained on JAFFE and CK+. JAFFE gives a half-length image, so face detection has to be done. The 5-fold cross-validation reached an accuracy rate of about 99%.
+The CNN model is mainly trained on JAFFE and CK+. JAFFE gives a half-length image, so face detection has to be done. Under 5-fold cross-validation, JAFFE achieved an accuracy rate of about 90%, while CK+ achieved an accuracy rate of nearly 100%.
 
 Use the command below to train the specified epochs on the dataset (jaffe or ck+）using a specific batch_size. The training will generate the corresponding visual training process. Here is an example of plotting the training process after the model has been trained on jaffe.
 
