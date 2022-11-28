@@ -31,7 +31,7 @@ We use Jaffe and CK+ as the dataset.
 
 ## Network design
 Using the classic convolutional neural network, the construction of the model mainly refers to a CVPR paper in 2018: A Compact Deep Learning Model for Robust Facial Expression Recognition to design the following network structure. After the input layer, a (1,1) convolutional layer is added to increase the nonlinear representation and the model level is shallow. , with fewer parameters (a large number of parameters are concentrated in the fully connected layer).
-<div align="center"><img src="./assets/network_structure.png" /></div>
+![](./assets/network_structure.png)
 
 
 ## Model training
