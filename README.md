@@ -54,7 +54,7 @@ python src/train.py --dataset ck+ --epochs 150 --batch_size 32
 
 
 ## Application 
-Compared with traditional methods, convolutional neural network performs better. We used this model to build a recognition system, and provided a GUI interface to realize interaction. When predicting, a picture is horizontally flipped, deflected by 15 degrees, and translated to obtain multiple probability distributions, and these probability distributions are weighted and summed to obtain the final probability distribution. Then, that with the highest probability is used as the label . 
+We used this model to build a recognition system, and provided a GUI interface to realize interaction. When predicting, a picture is horizontally flipped, deflected by 15 degrees, and translated to obtain multiple probability distributions, and these probability distributions are weighted and summed to obtain the final probability distribution. Then, that with the highest probability is used as the label . 
 ### **Graphical User Interface**
 
 Execute the following command to open the GUI program, which relies on PyQT, and the test effect on a test picture（The picture comes from the Internet） is as shown in the figure below.
