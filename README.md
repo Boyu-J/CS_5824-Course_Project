@@ -33,7 +33,7 @@ We use Jaffe and CK+ as the dataset.
 Using the classic convolutional neural network, the construction of the model mainly refers to a CVPR paper in 2018: A Compact Deep Learning Model for Robust Facial Expression Recognition to design the following network structure. After the input layer, a (1,1) convolutional layer is added to increase the nonlinear representation and the model level is shallow. , with fewer parameters (a large number of parameters are concentrated in the fully connected layer).
 
 ![](./assets/network_structure.png)
-
+- Reference: C. -M. Kuo, S. -H. Lai and M. Sarkis, "A Compact Deep Learning Model for Robust Facial Expression Recognition," 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2018, pp. 2202-22028, doi: 10.1109/CVPRW.2018.00286.
 
 ## Model training
 The CNN model is mainly trained on JAFFE and CK+. JAFFE gives a half-length image, so face detection has to be done. Under 5-fold cross-validation, JAFFE achieved an accuracy rate of about 90%, while CK+ achieved an accuracy rate of nearly 100%.
