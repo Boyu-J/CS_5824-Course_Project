@@ -55,7 +55,7 @@ python src/train.py --dataset ck+ --epochs 150 --batch_size 32
 
 
 ## Application 
-We used this model to build a recognition system, and provided a GUI interface to realize interaction. When predicting, a picture is horizontally flipped, deflected by 15 degrees, and translated to obtain multiple probability distributions, and these probability distributions are weighted and summed to obtain the final probability distribution. Then, that with the highest probability is used as the label . 
+We used the saved model to build a recognition system, and provided a GUI interface to realize interaction. When predicting, a picture was horizontally flipped, deflected by 15 degrees, and translated to obtain multiple probability distributions, and these probability distributions were weighted and summed to obtain the final probability distribution. Then, the label with the highest probability was used as the final prediction. Finally, the prediction was added on the input image as the output.
 ### **Graphical User Interface**
 
 Execute the following command to open the GUI program, which relies on PyQT, and the test effect on a test picture（The picture comes from the Internet） is as shown in the figure below.
